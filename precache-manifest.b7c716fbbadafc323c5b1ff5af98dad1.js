@@ -20,16 +20,16 @@ self.__precacheManifest = [
     "url": "/vocabulario-dev/static/media/montserrat-cyrillic-ext-400-normal.c6108a27.woff2"
   },
   {
-    "revision": "34b5787beef98663cf6194a90749dae3",
-    "url": "/vocabulario-dev/static/media/montserrat-vietnamese-400-normal.34b5787b.woff2"
+    "revision": "88b2997a5b9096e13024d571ed055bd2",
+    "url": "/vocabulario-dev/static/media/montserrat-all-400-normal.88b2997a.woff"
   },
   {
     "revision": "bc1039c3bfaae932e40a9b5bfeb85048",
     "url": "/vocabulario-dev/static/media/montserrat-cyrillic-400-normal.bc1039c3.woff2"
   },
   {
-    "revision": "88b2997a5b9096e13024d571ed055bd2",
-    "url": "/vocabulario-dev/static/media/montserrat-all-400-normal.88b2997a.woff"
+    "revision": "34b5787beef98663cf6194a90749dae3",
+    "url": "/vocabulario-dev/static/media/montserrat-vietnamese-400-normal.34b5787b.woff2"
   },
   {
     "revision": "21601a1a9acf15834a3a4d6e1ebecd31",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/vocabulario-dev/static/media/mania-de-leitura.81a42c50.png"
   },
   {
-    "revision": "5d48f92a701d6852e35a1bc4557f949f",
+    "revision": "4d613039a97cec39793bb43f3de76dda",
     "url": "/vocabulario-dev/index.html"
   }
 ];
