@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-cover-page',
@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class CoverPageComponent {
 
+  @Input() coverImage: string = '';
+  @Input() pageTitle: string = '';
+  @Input() pageSubtitle: string = '';
+  @Input() displayLogo: boolean = false;
 }

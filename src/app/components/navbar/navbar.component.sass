@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700")
+
+$footer-items: "logo" "../../../assets/logo.png" 150px, "git" "../../../assets/github.png" 30px, "linkedin" "../../../assets/linkedin.png" 30px, "insta" "../../../assets/instagram.png" 30px
+
+.footer
+  top: 0px
+  left: 0px
+  position: absolute
+  margin-top: 0px
+  height: 50px
+  width: 100%
+  background: #373C3F
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+
+.social-media
+  display: flex
+  flex-direction: row
+  align-items: center
+
+@each $name, $source, $size in $footer-items
+  .footer-item-#{$name}
+    background-image: url($source)
+    background-size: contain
+    background-position: center
+    height: 25px
+    margin: 15px
+    cursor: pointer
+    width: $size
+    background-repeat: no-repeat
+
+span
+  font-size: 12px
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 200
+  line-height: normal
+
+mat-icon
+  font-size: 22px

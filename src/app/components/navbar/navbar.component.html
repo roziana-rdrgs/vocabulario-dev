@@ -1,0 +1,39 @@
+
+<div class="footer">
+ <div style="display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-items: center;">
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/">
+      <mat-icon >home</mat-icon>
+      <span>início</span>
+    </button>
+
+    <button mat-menu-item>
+      <mat-icon>bug_report</mat-icon>
+      <span>tecnologia e afins</span>
+    </button>
+
+    <button mat-menu-item>
+      <mat-icon>extension</mat-icon>
+      <span>nem só de código</span>
+    </button>
+
+    <button mat-menu-item routerLink="/about" routerLinkActive="active" >
+      <mat-icon>sentiment_very_satisfied</mat-icon>
+      <span>sobre</span>
+    </button>
+
+  </mat-menu>
+  <a  class="footer-item-logo" href="/" ></a>
+ </div>
+  <div class="social-media">
+    <a  class="footer-item-git" href='https://github.com/roziana-rdrgs' target="_blank" ></a>
+    <a  class="footer-item-linkedin" href='https://www.linkedin.com/in/roziana-rdrgs/' target="_blank" ></a>
+    <a  class="footer-item-insta" href='https://www.instagram.com/roziana.rdrgs/' target="_blank" ></a>
+  </div>
+</div>

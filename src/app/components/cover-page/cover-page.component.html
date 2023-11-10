@@ -1,1 +1,12 @@
-<p>cover-page works!</p>
+<div class="cover-page">
+  <img class="cover-page-image" [src]="coverImage" />
+  <div *ngIf="displayLogo" class="cover-logo-image" ></div>
+
+  <h1  *ngIf="!displayLogo" class="cover-page-title">{{pageTitle}}</h1>
+  <h2 class="cover-description">{{pageSubtitle}}</h2>
+
+  <div class="profile">
+    <div class="profile-background"> </div>
+    <a class="profile-me" href="/about" routerLink="/about" aria-label="Sobre"></a>
+  </div>
+</div>
