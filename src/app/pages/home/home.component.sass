@@ -1,1 +1,120 @@
+@use "src/variables"
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500,700")
+
+$footer-items: "logo" "../../../assets/logo.png" 150px, "git" "../../../assets/github.png" 30px, "linkedin" "../../../assets/linkedin.svg" 30px, "insta" "../../../assets/instagram.png" 30px
+
+.example-card
+  max-width: 300px
+  color: #FFF
+  padding: 15px
+
+.example-header-image
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg')
+  background-size: cover
+
+mat-card-content
+ padding: 15px
+ font-family: Montserrat
+
+.page-content
+  display: flex
+  flex-direction: column
+  flex-flow: column
+  align-items: stretch
+  height: 100vh
+  max-width: 100vw
+  justify-content: space-between
+
+.vocabulary-content
+  display: block
+  flex-direction: row
+  flex-wrap: wrap
+  align-content: center
+  justify-content: flex-start
+
+.cover-page-image
+  position: absolute
+  background-image: url('../../../assets/covers/home.png')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  width: 90vw
+  height: 270px
+  left: 0px
+  top: 0px
+  repeat: no-repeat
+  filter: blur(2px)
+
+.cover-logo-image
+  background-image: url('../../../assets/logo.png')
+  background-repeat: no-repeat
+  background-size: auto
+  background-position: center
+  width: 95vw
+  height: 194px
+  display: flex
+  align-items: flex-end
+  justify-content: center
+
+.cover-description
+  display: flex
+  width: 738px
+  flex-direction: column
+  flex-shrink: 0
+  color: #FFF
+  font-size: 15px
+  font-family: Montserrat
+  font-style: italic
+  font-weight: 400
+  line-height: normal
+  top: 175px
+  position: absolute
+
+.profile-background
+  background-image: url('../../../assets/loading.gif')
+  background-repeat: no-repeat
+  background-size: auto
+  background-position: center
+  width: 205px
+  height: 205px
+  border-radius: 400px
+  right: 40px
+  position: absolute
+  top: 36px
+  filter: blur(5px) brightness(0.5)
+
+.profile-me
+  background-image: url('../../../assets/profile.png')
+  background-repeat: no-repeat
+  background-size: auto
+  background-position: center
+  width: 200px
+  height: 200px
+  border-radius: 400px
+  right: 42px
+  position: absolute
+  top: 38px
+  filter: brightness(0.8)
+
+.footer
+  margin-top: -36px
+  height: 50px
+  background: #373C3F
+  display: flex
+  flex-direction: row-reverse
+  justify-content: flex-start
+  align-items: center
+  flex-wrap: wrap
+
+
+@each $name, $source, $size in $footer-items
+  .footer-item-#{$name}
+    background-image: url($source)
+    background-size: contain
+    background-position: center
+    height: 30px
+    margin-right: 25px
+    filter: grayscale(1)
+    cursor: pointer
+    width: $size
+    background-repeat: no-repeat
