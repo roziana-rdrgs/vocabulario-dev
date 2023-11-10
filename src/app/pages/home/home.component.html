@@ -2,14 +2,8 @@
 <app-cover-page [coverImage]="'../../../assets/covers/home.png'" [pageTitle]="'Vocabulario'" [pageSubtitle]="pageSubtitle" [displayLogo]="true"></app-cover-page>
 
 <div class="vocabulary-content">
-  <!-- <mat-card class="post-card" routerLink="posts/hello-world">
-    <img class="post-card-image" mat-card-image src="./../../../assets/posts/hello-world/Hello-World.webp" alt="Hello World - meu primeiro post!">
-    <mat-card-content>
-      <p> <code>"Hello World!"</code> </p>
-      <p> O primeirissímo post do Vocabulário Dev!</p>
-    </mat-card-content>
-  </mat-card> -->
-
+  <app-post [postTitle]="'Hello World!'" [postDescription]="'dasdasd'" [postImage]="'../../../assets/posts/hello-world/Hello-World.webp'" [postLink]="'/posts/hello-world'"></app-post>
+  <app-post [postTitle]="'Figma'" [postDescription]="'dasdafdsfsdfsdfsdfsd'" [postImage]="'../../../assets/posts/hello-world/moodboard.png'"></app-post>
 </div>
 
 

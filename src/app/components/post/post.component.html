@@ -1,7 +1,9 @@
-
-<div class="post-container">
-  postagem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, obcaecati soluta. A laboriosam odio magnam dolore minus debitis eaque ea! Magnam reprehenderit, aspernatur maiores ex doloremque labore iure quasi dolor!
-
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore reiciendis cum quasi beatae, hic suscipit ipsum? Doloribus eaque consequuntur quisquam ut, suscipit numquam blanditiis voluptatum ullam voluptate, aspernatur dolorem quis!
-</div>
-
+<mat-card class="post-card" [style.background-image]="itemHovered ? 'url('+ postImage + ')' : ''" (mouseenter)="hoverListItem(true)" (mouseleave)="hoverListItem(false)" routerLink="{{postLink}}">
+  <mat-card-header>
+    <div class="post-card-image" [style.background-image]="'url('+ postImage+')'"> </div>
+  </mat-card-header>
+  <mat-card-footer>
+    <h2> <code>{{postTitle}}</code> </h2>
+    <h4>{{postDescription}}</h4>
+  </mat-card-footer>
+</mat-card>

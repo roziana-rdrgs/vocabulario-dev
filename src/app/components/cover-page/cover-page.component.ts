@@ -11,4 +11,5 @@ export class CoverPageComponent {
   @Input() pageTitle: string = '';
   @Input() pageSubtitle: string = '';
   @Input() displayLogo: boolean = false;
+  @Input() displayProfileImage: boolean = false;
 }
