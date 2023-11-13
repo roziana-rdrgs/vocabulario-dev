@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatIconModule} from '@angular/material/icon';
 import { MatButtonModule} from '@angular/material/button';
 import { PostComponent } from './components/post/post.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import { PostComponent } from './components/post/post.component';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatGridListModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

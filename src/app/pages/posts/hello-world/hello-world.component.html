@@ -1,1 +1,78 @@
-<app-post></app-post>
+<app-cover-page [coverImage]="'./../../../../assets/covers/home.png'" pageTitle="'Hello World!'" [pageSubtitle]="'bem-vindos ao meu cantinho da internet'"></app-cover-page>
+
+<section class="page-content">
+  <mat-grid-list cols="4" [style.width]="'100vw'"
+  [style.height]="'100vh'" rowHeight="300px">
+
+      <mat-grid-tile
+        [colspan]="1"
+        [rowspan]="3"
+        [style.background]="'#88918c'"
+        >
+        <div class="tile-content">
+          <small class="post-date">00001</small>
+          <h3 style="font-family: 'Montserrat';"><strong>momento nostalgia/fun fact</strong></h3>
+
+          <p style="font-size: 13px;">
+            Eu escrevi meu primeiro "olá mundo!" em 2014, foi muito provavelmente em <code>Portugol</code>, durante uma aula de lógica de programação no curso técnico que fiz no Senac.
+          </p>
+          <p style="font-size: 13px;">É muito louco pensar que fazer quase 10 anos, desde aquele dia que (clichê ou não) mudou a minha vida. Foi naquele momento que eu descobri a carreira que queria seguir.
+            Eu acredito que a educação é o meio que mais possibilita as pessoas de acessarem lugares que nunca sonharam e, aliada a tecnologia então, é capaz de mudar o mundo.
+            </p>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile
+        [colspan]="3"
+        [rowspan]="3"
+        [style.background]="'#373C3A'"
+        >
+        <div class="tile-content">
+          <h1><code>Olá, mundo!</code></h1>
+
+          <p>Boatos de que: começar um projeto com "hello world" é o equivalente ao começar com o pé direito da programação, é o nosso "break your legs!".
+            Então nada melhor do que esse ser o primeiro post do Vocabulário Dev.</p>
+
+          <h2 style="font-family: 'Montserrat';"><strong>first of all: porque vocabulário dev?</strong></h2>
+
+          <p>A área de TI, assim como qualquer outra área profissional, possui vários termos técnicos que são utilizados no dia-a-dia, desde comandos como
+            <code>for, if, them</code>
+            até termos mais populares como
+            <code>bug, daily, budget</code>
+            etc, e surgiu dai a ideia de criar o meu próprio vocabulário de desenvolvedora.</p>
+            <p>Além do mais eu tenho uma certa dificuldade em utilizar termos técnicos no meu dia-a-dia,
+              por exemplo: requisições assíncronas - eu sei o conceito, sei como utilizar, como implementar, mas na hora de passar pra outra pessoa, ou até mesmo em entrevistas de trabalho, eu acabo me atrapalhando e não sabendo como explicar de forma mais técnica. Deu pra entender? Pois é.
+
+            </p>
+            <p>Quem sabe a partir dessa "enciclopédia" (bem modesta) eu não consiga me habituar mais a utilizar esses jargões hein. É a minha esperança. </p>
+
+            <h2 style="font-family: 'Montserrat';"><strong>mas como, nem só de código vive o dev</strong></h2>
+
+            <p>Não vai ter somente código e tecnologia por aqui. Esse vai ser meu "commonplace book", onde quero anotar/escrever/armazenar as minhas ideias e projetos. Faz um tempo que criei no Figma um protótipo desse site aqui - quero escrever um post sobre isso - e nessa ideia inicial
+              eu havia separado algumas categorias de posts, como:
+
+            </p>
+            <ul>
+              <li>
+                tutoriais e projetos de tech
+              </li>
+              <li>conceitos e termos técnicos</li>
+              <li>leituras</li>
+              <li>hobbies e passatempo</li>
+            </ul>
+
+            <p>
+              Enfim, vamos ver o que acontece.
+            </p>
+
+            <p class="assign">
+              Ane Rodrigues
+            </p>
+        </div>
+
+
+      </mat-grid-tile>
+
+
+  </mat-grid-list>
+</section>
